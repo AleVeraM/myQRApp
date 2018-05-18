@@ -1,0 +1,27 @@
+
+<ion-header text-center>
+
+  <ion-navbar color="primary">
+    <ion-title>Historial</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item  *ngFor="let data of hisorial; let i = index" (click)="abrir_scan(i)">
+      <div>{{data.info}}</div>
+      <div>
+        <p>
+          {{data.tipo}}
+        </p>
+      </div>
+
+    </button>
+
+  </ion-list>
+
+
+</ion-content>
